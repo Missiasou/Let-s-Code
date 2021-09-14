@@ -1,3 +1,45 @@
 body{
     /* background-color: blue; */
+    margin:0px;
+}
+
+.top-container{
+    background-color: red; 
+    height: 200px; 
+    width: 200px;
+    position: absolute;
+    left: 200px;
+    /* position: relative;
+    left: 405px;
+    display:inline-block; */
+
+    /* border: solid 10px;
+    padding: 20px;  */
+   
+}
+
+.middle-container{
+    background-color: blue; 
+    height: 200px; 
+    width: 200px;
+    
+    /* position: relative;
+    right: 202px;
+    display:inline-block;
+     */
+    /* border: solid 20px;
+    margin-left: 260px; */
+}
+
+.bottom-container{
+    background-color: yellow; 
+    height: 200px; 
+    width: 200px;
+    
+    /* position: relative;
+    right: 204px;
+    display:inline-block;
+    */
+    /* border: solid 10px;
+    margin-left: 500px; */
 }
