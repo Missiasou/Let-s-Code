@@ -4,14 +4,49 @@ body {
     font-family: "Merriweather", sans-serif;
 }
 
+h1, h2 {
+    color: #66BFBF;
+    
+}
 
 h1 {
     font-family: 'Sacramento', cursive;
      font-size: 5.625rem; /*1 rem = 16px */
+     
 }
 
 h2 {
     font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;   
+}
+
+h3 {
+    color: #379eac;
+}
+
+hr { 
+    width: 4%;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #c2cccc;
+    border-width: 7px;    
+    margin-bottom: 4rem;
+}
+
+p {
+    font-weight: bold;
+}
+
+.text_hello {
+    width: 50%;
+    margin: 50px auto;
+    text-align: left;
+    line-height: 2;
+
+}
+
+.Roger-foto {
+    width: 15rem;
 }
 
 .pro {
@@ -51,8 +86,47 @@ h2 {
     margin-right: 30px;
 }
 
-.chillies-image {
+.guitar-image {
     width: 25%;
     float: right;
     margin-left: 30px;
+}
+
+.love-contact{
+    width: 30%;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 2;
+}
+
+.btn {
+    background-color: #379eac;;
+    padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    border-style: dotted;
+    border-radius: 10%;    
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    position: relative;
+    top: 4rem;
+    height: auto;
+    padding: 2rem;
+    
+    
+}
+
+.footer-link {
+    margin: 1rem;
+    color: #11999E;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.fim {
+    margin-top: 2rem;
+    color: #EAF6F6;
 }
