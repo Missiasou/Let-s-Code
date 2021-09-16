@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    margin: 0px;
+    font-family: "Merriweather", sans-serif;
+}
+
+
+h1 {
+    font-family: 'Sacramento', cursive;
+     font-size: 5.625rem; /*1 rem = 16px */
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+    
+}
+
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.top-container {
+    position: relative;
+    padding-top: 100px;
+    background-color: #d4ecdd;
+}
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+
+}
+
+.computer-img{
+    float: left;
+    border-radius: 100%;
+    width: 25%;
+    margin-right: 30px;
+}
+
+.chillies-image {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
