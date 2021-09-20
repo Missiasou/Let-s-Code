@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+#title {
+    background-color: #ED4866;
+    color: white;
+    
+}
+
+ .collapse navbar-collapse {
+    position: absolute;
+    
+}
+
+.navbar-nav{
+    position: relative;
+    left: 60%;
+    top: 4rem;
+    width: 35%;
+   
+    
+} 
+
