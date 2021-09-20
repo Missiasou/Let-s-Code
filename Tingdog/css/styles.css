@@ -1,9 +1,11 @@
 body{
     margin: 0;
+    text-align: center;
+    font-family: 'Scheherazade New', serif;
 }
 #title {
     background-color: #ED4866;
-    color: white;
+    color: white; 
     
 }
 
@@ -13,11 +15,119 @@ body{
 }
 
 .navbar-nav{
-    position: relative;
-    left: 60%;
-    top: 4rem;
-    width: 35%;
-   
+    position: absolute;
+    box-sizing: border-box;
+    right: 10rem;
+    top: 5.6rem;
+    font-size: 1.5rem;
     
 } 
+
+.row {
+    width: 100%;
+    margin-top: 4rem; 
+    margin-bottom: 0rem;
+    overflow: hidden;
+}
+
+.col-lg-6{
+    position: relative;
+    left: 15rem;
+    
+}
+
+.iphone-image {
+    transform: rotate(25deg);    
+    width: 35%;
+    position: relative;
+    top: 9rem;
+    right: 15rem;
+    
+   
+        
+}
+
+#features {
+    background-color: #FFFFFF;
+    
+}
+
+h1{
+    text-align: left;
+    width: 70%;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.h1-tindog{
+    text-align: justify;
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.button {
+    text-align: justify;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#features{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+}
+
+.button2 {
+    margin: 2rem;
+    font-size: 1rem; 
+}
+
+.easy {
+    font-size: 1.5rem;
+    font-family: 'Scheherazade New', serif;
+    font-weight: 520;
+    margin: 1rem;
+}
+
+.p1 {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    color: rgb(151, 146, 146);
+    font-size: 1.15rem;
+}
+
+.img-dog {
+    width: 7rem;
+    border-radius: 100%;
+    margin: 1rem 0 2rem 0;
+}
+
+.img-dog1 {
+    width: 6.67rem;
+    border-radius: 100%;
+}
+
+#testimonials {
+    background-color: #df806f;
+    color: white;
+    height: 700px;
+    padding-top: 4rem;
+    font-size: 1.5rem;
+}
+
+.h2-long {
+    margin: 0 20rem 2rem 20rem;
+    font-size: 3rem;
+    
+}
+
+#press {
+    margin: 10rem 5rem 5rem 10rem;
+   
+}
 
