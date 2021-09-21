@@ -41,10 +41,7 @@ body{
     width: 35%;
     position: relative;
     top: 9rem;
-    right: 15rem;
-    
-   
-        
+    right: 15rem;      
 }
 
 #features {
@@ -102,32 +99,42 @@ h1{
 }
 
 .img-dog {
-    width: 7rem;
+    width: 6rem;
     border-radius: 100%;
-    margin: 1rem 0 2rem 0;
+   
 }
 
 .img-dog1 {
-    width: 6.67rem;
+    width: 4rem;
     border-radius: 100%;
+    
 }
 
 #testimonials {
     background-color: #df806f;
     color: white;
-    height: 700px;
     padding-top: 4rem;
     font-size: 1.5rem;
 }
 
 .h2-long {
-    margin: 0 20rem 2rem 20rem;
-    font-size: 3rem;
+    margin: 0 20rem 4rem 20rem;
+    font-size: 2.5rem;
     
 }
 
-#press {
-    margin: 10rem 5rem 5rem 10rem;
-   
+#press { 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: space-between;
 }
+
+.logos {
+    width: 8rem;
+    margin: 3rem 0 3rem 1rem; 
+}
+   
+
 
