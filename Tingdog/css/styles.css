@@ -74,6 +74,7 @@ h1{
     margin: 3rem;
     font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
+    flex-wrap: wrap;
     
     
 }
@@ -104,37 +105,92 @@ h1{
    
 }
 
-.img-dog1 {
-    width: 4rem;
-    border-radius: 100%;
-    
-}
 
 #testimonials {
     background-color: #df806f;
     color: white;
-    padding-top: 4rem;
+    padding: 4rem 0 4rem 0;
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 100px;
+    
+
 }
 
-.h2-long {
+ .h2-long {
     margin: 0 20rem 4rem 20rem;
     font-size: 2.5rem;
     
 }
 
-#press { 
+
+
+#press {  
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    align-content: space-between;
+    align-items: center; 
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    
+    
+   
+
 }
 
 .logos {
     width: 8rem;
-    margin: 3rem 0 3rem 1rem; 
+    margin: 1rem;
+    
 }
-   
+
+.pricing1{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    
+}
+.prici{
+    font-size: 1.2rem;
+
+}
+
+.pricing2 {
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+} 
+
+.cta{
+    background-color: #ED4866;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    
+}
 
 
+.find {
+    width: 50%;
+}
+
+#footer {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.icones{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 1rem;
+}
