@@ -28,10 +28,10 @@
 
 // console.log(`O valor da sua conta foi de ${conta} reais, a sua gorjeta foi de ${gorjeta} reais e o valor total pago foi de ${conta+gorjeta}`);
 
-const calcGorjeta = function (conta) {
-    return conta >= 50 && conta <= 300 ? conta*0.15 : conta*0.2;
+// const calcGorjeta = function (conta) {
+//     return conta >= 50 && conta <= 300 ? conta*0.15 : conta*0.2;
     
-};
+// };
 // console.log(calcGorjeta(275));
 
 // const contas = [125, 555, 44];
