@@ -45,3 +45,17 @@ if (rogerio[interessadoEm]) {
     "Requisição inválida! Escolha entre firstName, lastName, age, job ou friends"
   );
 }
+
+// //Função para gerar um número inteiro randômico de acordo com um intervalo
+// function randomIntFromInterval(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1) + min);
+// }
+
+// //Programa
+// const target = randomIntFromInterval(1, 50);
+// do{
+//     var guess = parseInt(prompt('digite um número entre 1 e 50'));
+//     if(guess !== target) console.log('Tente novamente');
+// }
+// while(guess !== target);
+// console.log('Você acertou!');
