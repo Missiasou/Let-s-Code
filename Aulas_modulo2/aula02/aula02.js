@@ -131,5 +131,5 @@ switch(diaSemana) {
 
 // operador ternário
 
-const age3 = 28;
-age3 >= 18 ? console.log('gosto') : console("não gosto")
+const age3 = 8;
+age3 >= 18 ? console.log('gosto') : console.log("não gosto")
