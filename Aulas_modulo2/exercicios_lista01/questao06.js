@@ -5,7 +5,9 @@ const listarComidas = function(fruit,veget){
     const fruites = fruit;
     const vegets = veget;
 
-/* a */    vegets.shift();
+/* a */    vegets.shift(); 
+
+
 /* b */    fruites.pop();
 /* c */    const c = fruites.indexOf("Mamão")
 /* d */    fruites.unshift(c);
