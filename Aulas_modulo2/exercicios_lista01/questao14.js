@@ -1,19 +1,24 @@
-const string = ["papai", "p"];
+const string = ["paralelepipedo", "p"];
 const [a,b] = string;
 
-let d = b.toUpperCase();
+let novaString = "";
 
-const verificaString = function(){
+const verificaString = function(a,b){
     for(let i = 0; i <a.length; i++){
         if(a[i] === b){
-        console.log(d);
+            novaString += a[i].toUpperCase();
+        
         } else {
-            console.log(a[i])
+            novaString += a[i]
         }
         
     }
     
+   return novaString;
 }
 
-verificaString(a);
+console.log(verificaString(a,b));
 
+
+
+// console.log(d[i].toString());
