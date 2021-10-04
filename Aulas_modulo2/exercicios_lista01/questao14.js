@@ -1,10 +1,19 @@
 const string = ["papai", "p"];
+const [a,b] = string;
 
-for(let i = 0; i <= string.length; i++){
-    
+let d = b.toUpperCase();
+
+const verificaString = function(){
+    for(let i = 0; i <a.length; i++){
+        if(a[i] === b){
+        console.log(d);
+        } else {
+            console.log(a[i])
+        }
+        
+    }
     
 }
 
-console.log(stringUpper(string))
+verificaString(a);
 
-stringUpper += string[i].toUpperCase();
