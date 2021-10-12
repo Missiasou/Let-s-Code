@@ -1,3 +1,9 @@
+// O objeto abaixo é formado pelo nome (name), idade (age), peso (weight) e altura (height) de 5 pessoas.
+// Utilize a função map para adicionar outros dois campos ao objeto acima:
+
+// bmi: que contém o IMC (Body Mass Index ou Índice de Massa Corporal) da pessoa (float)
+// classification: uma classificação simples do IMC da pessoa. Insira a string 'fora da faixa Normal', caso a pessoa tenha um IMC abaixo de 18,5 ou acima de 25. Insira a string 'Normal', caso a pessoa tenha um IMC entre 18,5 e 25.
+
 const people = [
     {
         name: "Angelina Jolie",

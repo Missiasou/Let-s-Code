@@ -1,3 +1,12 @@
+// Enunciado
+// Os dados do objeto abaixo foram obtidos por meio de uma requisição a uma API que nos fornece os dados dos posts de um blog, os quais estão armazenados em um banco de dados:
+// Observe que cada post contém um id, título (title), conteúdo (content) e autor (author).
+
+// Para renderizar essas informações no front-end da página inicial do blog, o programador (você!) deseja colocar o nome do autor em caixa alta (já que ele vai ficar bem pequeno abaixo do título) e utilizar apenas os 300 primeiros caracteres do conteúdo do post, afinal, a ideia é que o usuário tenha apenas uma noção do conteúdo daquele post (imagine que o conteúdo do post é enorme).
+
+// Utilize a função map para aplicar essa transformação no objeto acima.
+
+
 const posts = [
     {
       id: 0,
