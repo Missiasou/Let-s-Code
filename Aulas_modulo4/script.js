@@ -65,7 +65,8 @@ document.querySelector('.check').addEventListener('click', function (){
 })
 
 document.querySelector('.again').addEventListener('click', function (){
-    document.querySelector('.score').textContent = 20;
+    score = 20;
+    document.querySelector('.score').textContent = score;
     secretNumber = Math.trunc(Math.random()*20) + 1;
     document.querySelector('.message').textContent = 'Comece a advinhar...';
     document.querySelector('body').style.backgroundColor = 'black';
