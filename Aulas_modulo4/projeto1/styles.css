@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+    background-color: #c2ebe5;
+  }
+
+  .botao_inicio{
+    margin-top: 2.5rem;
+    font-size: 3rem;
+    color: #333;
+    background: white;
+    border-radius: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  
+  }
+
+  .btn {
+    margin: 25px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 5px solid rgb(103, 124, 124);
+    border-radius: 100%;
+  }
+
+  .red {
+    background-color: red;
+    margin-top: 200px;
+  }
+
+  .orange {
+    background-color: orange;
+    margin-top: 185px;
+}
+
+  .yellow {
+    background-color: yellow;
+    margin-top: 175px;
+  }
+
+    
+  .green {
+    background-color: green;
+    margin-top: 165px;
+  }
+  
+  .blue {
+    background-color: blue;
+    margin-top: 155px;
+  }
+  
+  .purple {
+      background-color: purple;
+      margin-top: 145px;
+  }
+
+  .pink {
+      background-color: pink;
+      margin-top: 135px;
+  }
+  
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+
+  .hidden {
+      display: none;
+  }
