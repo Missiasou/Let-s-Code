@@ -68,6 +68,11 @@ body {
     background-color: grey;
   }
 
+  .pressed2 {
+    box-shadow: 0 0 20px white;
+    background-color: rgb(28, 231, 221);
+  }
+
   .hidden {
       display: none;
   }
