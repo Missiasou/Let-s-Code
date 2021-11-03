@@ -2,8 +2,8 @@
 
 const mensagemFinal = document.querySelector('.fim');
 mensagemFinal.classList.add('hidden');
-const musicaDeus = document.querySelector('.musica1');
-const musicaBrilha = document.querySelector('.musica2');
+const musicaDeus = document.querySelector("#1");
+const musicaBrilha = document.querySelector("#2");
 const h3 = document.querySelector('h3');
 const recomecar = document.querySelector('.recom');
 const regras = document.querySelector('.regra')
@@ -25,28 +25,31 @@ let tocandoMusica = [];
 
 
 
-document.querySelector('.musica1').addEventListener('click', function(){
-    musicaDeus.classList.add('hidden');
-    musicaBrilha.classList.add('hidden');
-    h3.classList.add('hidden');
-    recomecar.classList.add('hidden');
-    regras.classList.add('hidden');
-    musica = musicGod;
-    tocando = musica[count];
-    animarBotao2(tocando);    
+document.querySelectorAll('.musica').forEach(ele=>{
+    ele.addEventListener('click', function(){
+        musicaDeus.classList.add('hidden');
+        musicaBrilha.classList.add('hidden');
+        h3.classList.add('hidden');
+        recomecar.classList.add('hidden');
+        regras.classList.add('hidden');
+        SelecionarMusica(element.id)     
+    })
 })
 
-document.querySelector('.musica2').addEventListener('click', function(){
-    musicaDeus.classList.add('hidden');
-    musicaBrilha.classList.add('hidden');
-    h3.classList.add('hidden');
-    recomecar.classList.add('hidden');
-    regras.classList.add('hidden');
-    musica = musicBrilha;
+function SelecionarMusica(listaId){
+    switch (listaId) {
+        case 1:
+            musica = musicGod;
+            break;
+        case 2:
+            musica = musicBrilha;
+            break;
+        default:
+            break;
+    }    
     tocando = musica[count];
-    animarBotao2(tocando);    
-})
-
+    animarBotao2(tocando);   
+}
 
 
 function animarBotao(tocando) {
@@ -95,6 +98,7 @@ document.querySelectorAll('.btn').forEach(btnEl => {
 
     })
 });
+
 
 
 function check(tam){

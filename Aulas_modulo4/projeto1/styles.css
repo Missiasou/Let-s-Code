@@ -1,29 +1,43 @@
 body {
     text-align: center;
-    background-color: #c2ebe5;
+    background-color: #4b5c59;
   }
 
-  .botao_inicio{
-    margin-top: 2.5rem;
-    font-size: 3rem;
+  h1, h3{
+    font-size: 2.5rem;
+    color: aliceblue;
+  }
+
+  .botoes{
+    margin-top: 1rem;
+    font-size: 1.5rem;
     color: #333;
     background: white;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
-  .container {
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    flex-wrap: wrap;
+  
+  }
+
+  .container2 {
     display: flex;
     justify-content: center;
     margin: auto;
+    flex-wrap: wrap;
   
   }
 
   .btn {
     margin: 25px;
     display: inline-block;
-    height: 100px;
-    width: 100px;
-    border: 5px solid rgb(103, 124, 124);
+    height: 50px;
+    width: 50px;
+    border: 3px solid rgb(103, 124, 124);
     border-radius: 100%;
   }
 
