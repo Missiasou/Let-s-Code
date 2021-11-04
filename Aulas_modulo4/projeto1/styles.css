@@ -8,12 +8,19 @@ body {
     color: aliceblue;
   }
 
+  p {
+    font-size: 3rem;
+    color: rgb(238, 219, 52);
+    margin-bottom: 0px;
+  }
+
   .botoes{
     margin-top: 1rem;
     font-size: 1.5rem;
     color: #333;
     background: white;
     border-radius: 10px;
+    cursor: pointer;
   }
 
   .container1 {
@@ -39,6 +46,7 @@ body {
     width: 50px;
     border: 3px solid rgb(103, 124, 124);
     border-radius: 100%;
+    cursor: pointer;
   }
 
   .red {
@@ -89,4 +97,28 @@ body {
 
   .hidden {
       display: none;
+  }
+
+  .boxRegra {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: rgb(29, 135, 167);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+
+  .fecharbutton {
+    position: absolute;
+    top: 0rem;
+    right: 0.2rem;
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
   }
