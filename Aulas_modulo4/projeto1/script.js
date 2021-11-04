@@ -216,6 +216,8 @@ document.querySelectorAll('.botoes').forEach(El => {
             
             } else{  
                 playing = false;
+                const audio2 = new Audio(`sounds/Cartoon Boing.mp3`);
+                audio2.play();
                     mensagemFinal.classList.remove('hidden');
                     document.querySelector('.fim').textContent = `Você errou :(,   tente novamente!`
                     h3.classList.add('hidden');
