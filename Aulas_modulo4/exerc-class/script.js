@@ -1,38 +1,41 @@
-const marca = document.querySelector('.marca');
-
-
-document.querySelector('p').classList.add('hidden')
-
-
-// marca.addEventListener('click', function() {
-    
-// })
-
-
-// async function retornarValoresDaApi() {
-//     try {
-//         const response = await fetch('https://parallelum.com.br/fipe/api/v1/carros/marcas');
-//         const marcas = await response.json();
-//         let lista = marcas.map( marca => `
-//         <tr id="${marca.codigo}">
-//            <td>${marca.nome}</td>  
-//         </tr>
-//         `  ).join("")   
-
-//     } catch (err) {
-//         return err;
-//     }
-// }
-
-// retornarValoresDaApi();
+const marcas = document.querySelector('.marca');
+const marcaTable = document.querySelector('.marcaTable');
+const load = document.querySelector('p');
+const foto = document.querySelector('.foto');
+const table = document.querySelector('.table');
 
 
 
 
 
-// const marcaCarro = ({id,nome}) => `
-//    <tr id="${id}">
-//       <td>${nome}</td>  
-//    </tr>
-// `;
 
+marcas.addEventListener('click', function() {
+    foto.classList.remove('hidden')
+    table.classList.remove('hidden')
+    const valores = {
+        method: "GET",
+        mod: "cors",
+    };
+    fetch(`https://parallelum.com.br/fipe/api/v1/carros/marcas/59/modelos/5940/anos/2014-3`, valores)
+                .then(response => response.json())
+                .then(resp => preencherTabela(resp))
+                .then(resp => marcaTable.innerHTML = resp) 
+                .catch(err => err)
+});
+
+const preencherTabela = (dados) => {
+    if(!dados) {
+    load.textContent = "Não existem registros a serem exibidos."
+      return;
+    } else {
+        return `
+        <tr>
+            <td>${dados.AnoModelo}</td>
+            <td>${dados.Marca}</td>
+            <td>${dados.Modelo}</td>
+            <td>${dados.Valor}</td>
+         </tr>
+         `;
+        }
+   
+  };
