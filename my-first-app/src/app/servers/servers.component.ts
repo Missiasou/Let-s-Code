@@ -9,7 +9,7 @@ export class ServersComponent implements OnInit {
 
   permitirAdicaoServidor = false;
   statusAdicaoServidor = 'Nenhum servidor foi criado';
-  serverName = "TEstserv"
+  serverName = "Testserv"
   userName = "";
 
   constructor() {
@@ -30,8 +30,5 @@ export class ServersComponent implements OnInit {
     this.serverName = event.target.value;
   }
 
-  onCreateUserName(){
-    this.userName = "";
-  }
-
+  
 }

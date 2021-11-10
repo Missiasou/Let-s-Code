@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title:string = 'Rogério';
+
+  username: string = '';
+
+  checkUsername() {
+    return this.username === '';
+  }
+
+  resetUsername() {
+    this.username = '';
+  }
 }
+
+
