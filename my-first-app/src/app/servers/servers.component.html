@@ -8,12 +8,23 @@
 
 <p [innerText]="permitirAdicaoServidor"></p>
 
-{{ statusAdicaoServidor }}
+<!-- {{ statusAdicaoServidor }} -->
+
+<p *ngIf="serverCreated; else noServer">O Servidor foi criado</p>
+
+<ng-template #noServer>
+    <p>Nenhum Servidor foi criado</p>
+</ng-template>
 
 <input type="text" class="form-control" (input)='onUpdateSeverName($event)'>
 
 {{ serverName }}
 
 
+<input type="text" class="form-control" [(ngModel)]="serverName">
+
+<div *ngFor="let server of servers2">
+   <h1>{{ server.idade }}</h1>
+</div>
 
 <input type="text" class="form-control" [(ngModel)]="serverName">

@@ -3,3 +3,6 @@
 </p> -->
 
 <p>Server com id {{ serverId }} está {{ getServerStatus() }}</p>
+
+<p [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: serverStatus === 'online'}">
+    Server com id {{ serverId }} está {{ getServerStatus() }}</p>

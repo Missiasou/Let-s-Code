@@ -11,6 +11,17 @@ export class ServersComponent implements OnInit {
   statusAdicaoServidor = 'Nenhum servidor foi criado';
   serverName = "Testserv"
   userName = "";
+  serverCreated = false;
+  servers = ['SERVIDOR LETS CODE', 'SERVIDOR TURMA #810'];
+
+  servers2 = [{
+    name: 'Larissa',
+    idade: 23
+  }, 
+  {
+    name: 'Eduarda',
+    idade: 18
+  }]
 
   constructor() {
     setTimeout(() =>{
@@ -22,6 +33,7 @@ export class ServersComponent implements OnInit {
   }
 
   onCreateServer(){
+    this.serverCreated = true;
     this.statusAdicaoServidor = 'Servidor criado! Nome do servidor é ' + this.serverName;
   }
 
