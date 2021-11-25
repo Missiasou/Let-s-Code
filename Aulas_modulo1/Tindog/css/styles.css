@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Scheherazade New', serif;
+}
+#title {
+    background-color: #ED4866;
+    color: white; 
+    
+}
+
+
+.navbar-nav{
+    font-size: 1.5rem;
+    
+} 
+
+#row1{
+    padding-top: 3rem ;
+}
+
+.row {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.iphone-image {
+    transform: rotate(25deg);    
+    width: 50%;
+    position: relative;
+    top: 9rem;
+    
+}
+
+#features {
+    background-color: #FFFFFF;
+    
+}
+
+h1{
+    text-align: left;
+    width: 70%;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.h1-tindog{
+    text-align: justify;
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.button {
+    text-align: justify;
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#features{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    flex-wrap: wrap;
+    
+    
+}
+
+.button2 {
+    margin: 2rem;
+    font-size: 1rem; 
+}
+
+.easy {
+    font-size: 1.5rem;
+    font-family: 'Scheherazade New', serif;
+    font-weight: 520;
+    margin: 1rem;
+}
+
+.p1 {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    color: rgb(151, 146, 146);
+    font-size: 1.15rem;
+}
+
+.img-dog {
+    width: 6rem;
+    border-radius: 100%;
+   
+}
+
+
+#testimonials {
+    background-color: #df806f;
+    color: white;
+    padding: 4rem 0 4rem 0;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 100px;
+    
+
+}
+
+ .h2-long {
+    margin: 0 20rem 4rem 20rem;
+    font-size: 2.5rem;
+    
+}
+
+
+
+#press {  
+    display: flex;
+    align-items: center; 
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: center; 
+
+}
+
+.logos {
+    width: 8rem;
+    margin: 1rem;
+    
+}
+
+.pricing1{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    
+}
+.prici{
+    font-size: 1.2rem;
+
+}
+
+.pricing2 {
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+} 
+
+.cta{
+    background-color: #ED4866;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    
+}
+
+
+.find {
+    width: 50%;
+}
+
+#footer {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.icones{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 1rem;
+}

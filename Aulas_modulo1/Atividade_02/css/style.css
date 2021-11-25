@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #EAF6F6;
+    width: 100%;
+
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+#nuvem_1 {
+    position: relative;
+    top: 50px;
+    left: 1100px;
+}
+
+.nuvens {
+    width: 200px;
+}
+
+#nuvem_2 {
+    position: relative;
+    left: 300px;
+}
+
+#mountain {
+    /* position: relative;
+    left: 500px; */
+    text-align: center;
+}
+
+#mountain1 {
+    width: 700px;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    color: #66BFBF;
+    }
+
+h1 {
+    font-size: 100px;
+    font-family: 'Sacramento', cursive;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 48px;
+    margin-top: 0px;
+}
+
+.foto_roger {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#tamanho_foto {
+    width: 300px;
+}
+
+.texto_hello {
+    
+    display: block;
+    width: 550px;
+    position: relative;
+    left: 500px;
+    color: #40514E;
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+}
+
+hr {
+    margin: 60px;
+    width: 4%;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #c2cccc;
+    border-width: 7px;
+    position: relative;
+    left: 693px;
+    
+}
