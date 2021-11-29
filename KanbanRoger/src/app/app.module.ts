@@ -9,6 +9,7 @@ import { TodoComponent } from './cards/todo/todo.component';
 import { DoingComponent } from './cards/doing/doing.component';
 import { DoneComponent } from './cards/done/done.component';
 import { NovoComponent } from './cards/novo/novo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NovoComponent } from './cards/novo/novo.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
