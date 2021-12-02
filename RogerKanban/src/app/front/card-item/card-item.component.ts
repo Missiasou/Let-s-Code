@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card-item',
@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardItemComponent implements OnInit {
 
+  titulo!: string;
+  conteudo!: string;
+  
+  @Output() emitTitulo: EventEmitter<any> = new EventEmitter<any>();
+  @Output() emitConteudo: EventEmitter<any> = new EventEmitter<any>();
+
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  sendTitulo(){
+    this.emitTitulo.emit(this.titulo);
+  }
+
+  sendConteudo() {
+    this.emitConteudo.emit(this.conteudo);
   }
 
 }

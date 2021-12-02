@@ -8,8 +8,13 @@ import { DoneComponent } from './front/done/done.component';
 import { ToDoComponent } from './front/to-do/to-do.component';
 import { CardComponent } from './front/card/card.component';
 import { CardItemComponent } from './front/card-item/card-item.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './front/header/header.component';
+import { HttpClientModule} from '@angular/common/http'
+import { ApiService } from './service/api.service';
+import { AuthGuardService } from './auth-guard.service';
+import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,13 +25,18 @@ import { HeaderComponent } from './front/header/header.component';
     ToDoComponent,
     CardComponent,
     CardItemComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    
   ],
-  providers: [],
+  providers: [ApiService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

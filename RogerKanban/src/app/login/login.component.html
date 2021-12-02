@@ -1,0 +1,17 @@
+<div class="card ajust2" style="width: 16rem;">
+    
+    <div class="card-body">
+        <form [formGroup]='form' (ngSubmit)='login()'>
+            <label for='username'>Entre com o Usuário:</label>
+            <input type='text' placeholder="Enter username" name="username" formControlName='username' required>
+    
+            <label for='Password'>Senha:</label>
+            <input type='password' placeholder="Enter password" name='Password' formControlName='password' required>
+    
+            <button type="submit" class="btn btn-outline-info">Login</button>
+        </form>
+    </div>
+  </div>
+    
+ 
+    

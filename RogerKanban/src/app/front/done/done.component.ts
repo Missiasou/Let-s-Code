@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CardId } from 'src/app/Model/cardTwo.model';
 
 @Component({
   selector: 'app-done',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./done.component.css']
 })
 export class DoneComponent implements OnInit {
+
+  @Input() doneTaskList!: CardId[];
+  task!: CardId;
 
   constructor() { }
 

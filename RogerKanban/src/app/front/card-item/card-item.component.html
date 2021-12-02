@@ -1,1 +1,20 @@
-<p>card-item works!</p>
+
+
+<div class="card border-primary mb-3 ajust" style="max-width: 17rem;">
+    <h5 class="card-header">Escreva abaixo sua tarefa</h5>
+    <div class="card-body text-primary">
+      <h5 class="card-title ajust">
+       <input  type="text" placeholder="Title" name="Titulo" [(ngModel)]='titulo' (keyup)= 'sendTitulo()' required>
+      </h5>
+      <p class="card-text ajust">
+        <textarea class="form-control" placeholder="Description" id="floatingTextarea2" style="height: 100px" [(ngModel)]='conteudo' (keyup)='sendConteudo()' required></textarea>
+      </p>
+    </div>
+    <div class="card-footer bg-transparent border-primary"><div class="row">
+      <div class="col ajust">
+        
+      </div>
+    </div>
+  </div>
+
+ 

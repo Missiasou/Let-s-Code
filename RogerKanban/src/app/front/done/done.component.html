@@ -1,4 +1,4 @@
-<div class="card border-primary mb-3" style="max-width: 17rem;">
+<!-- <div class="card border-primary mb-3" style="max-width: 17rem;">
     
   <div class="card-body text-primary">
     <h5 class="card-title ajust">
@@ -37,4 +37,12 @@
       </div>
     </div>
     </div>
-  </div>
+  </div> -->
+
+ 
+        <div *ngFor='let task of doneTaskList'>
+            <div *ngIf="task.lista === 'Done'">
+                <app-card [task]='task'></app-card>
+            </div>
+        </div>
+    

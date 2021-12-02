@@ -1,3 +1,3 @@
-export class Cards {
-    constructor(public titulo: string, public conteudo: string, public lista: string) {}
+export class Card {
+    constructor(public titulo: string, public conteudo: string, public lista: 'To-Do') {}
 }

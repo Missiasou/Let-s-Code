@@ -1,10 +1,49 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 .ajust {
     display: flex;
     justify-content: center;
     align-items: center;   
 }
 
+.ajust2{
+    align-items: center;
+    margin: 2rem;
+    background-color:rgb(240, 241, 196);
+}
+
 body{
     background-color: rgb(129, 127, 127);
 }
 
+
+
+
+
+.title-text {
+    text-align: center;
+    margin: 0;
+
+}
+
+.item-border {
+    border: 0.1rem solid rgb(204, 120, 120);
+    padding: 1rem;
+    background-color:rgb(250, 252, 253);
+    margin: 1rem;
+    border-radius: 3%;
+}
+
+.icon-edit {
+    float: right;
+}
+
+.btn-icon {
+    border: none;
+    background-color:rgb(250, 252, 253);
+}
+
+.icon-space {
+    display: flex;
+    justify-content: space-between;
+}

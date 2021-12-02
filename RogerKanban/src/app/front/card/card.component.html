@@ -1,21 +1,123 @@
 <div class="card border-primary mb-3" style="max-width: 17rem;">
-    
-    <div class="card-body text-primary">
-      <h5 class="card-title ajust">
-       <input type="text" placeholder="Title">
-      </h5>
-      <p class="card-text ajust">
-        <textarea class="form-control" placeholder="Description" id="floatingTextarea2" style="height: 100px"></textarea>
-      </p>
-    </div>
-    <div class="card-footer bg-transparent border-primary"><div class="row">
-      <div class="col ajust">
-        <button type="button" class="btn btn-outline-success">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-              </svg>
-              
-        </button>
-      </div>
-    </div>
+  <ng-container *ngIf='!isEditing'> 
+  <div class="card-body text-primary">
+    <h5 class="card-title ajust">
+     {{task.titulo}} 
+    </h5>
+    <p class="card-text ajust">
+      {{task.conteudo}}
+    </p>
   </div>
+    <div class="card-footer bg-transparent border-primary">
+      <div class="row justify-content-md-center">
+        <div class="col-3 ajust">
+          <button type="button" class="btn btn-outline-info" (click)='backwards()'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                  <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+              </svg>
+          </button>
+      </div>
+        <div class="col-3 ajust">
+          <button type="button" class="btn btn-outline-warning" (click) = 'toggle()'>
+            <svg  xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+          </svg>
+        </button>
+          
+        </div>
+        
+          <div class="col-3 ajust">
+            <button (click)='deleteTask()' type="button" class="btn btn-outline-danger">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+              </svg>
+            </button> 
+          </div>
+          
+          <div class="col-3 ajust">
+            <button (click)='forwards()' type="button" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+              <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+            </svg>
+          </button>
+            
+          </div>
+        </div>
+          
+    </div>
+  </ng-container> 
+
+  <ng-container *ngIf='isEditing'>
+    <input [(ngModel)]='titleChange' value='titleChange'>
+
+    <hr>
+
+    <div class='card-body'>
+        <textarea rows="3" [(ngModel)]='contentChange'></textarea>
+    </div>
+
+    <hr>
+    <div>
+      <div class="row justify-content-center">
+        <button (click)='confirmChanges()' type="button" class="btn btn-outline-success">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </button>
+        <button (click)='cancelChanges()' type="button" class="btn btn-outline-danger close" (click)='toggle()'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+            <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+          </svg>
+        </button>
+
+      </div>
+      
+    </div>
+
+    
+  </ng-container>
+
+  </div>
+
+
+
+  <!-- <div class="card item-border" [ngStyle]="{'background-color': this.task.lista === 'Done' ? 'lightgreen' : this.task.lista === 'Doing' ? '#FFD580' : '#ffcccb'}">
+    <ng-container *ngIf='!isEditing'>
+        <h4 class='card-header'>{{task.titulo}}</h4>
+        <button (click) = 'toggle()' class="icon-edit btn-icon" [ngStyle]="{'background-color': this.task.lista === 'Done' ? 'lightgreen' : this.task.lista === 'Doing' ? '#FFD580' : '#ffcccb'}"><i class="bi bi-pencil-square"></i></button>
+
+        <hr>
+
+        <div class='card-body'>
+            <p rows="1" [ngStyle]="{'background-color': this.task.lista === 'Done' ? 'lightgreen' : this.task.lista === 'Doing' ? '#FFD580' : '#ffcccb'}">{{task.conteudo}}</p>
+        </div>
+
+        <hr>
+
+        <div class="icon-space">
+            <button (click)='backwards()' class="btn-icon" [ngStyle]="{'background-color': this.task.lista === 'Done' ? 'lightgreen' : this.task.lista === 'Doing' ? '#FFD580' : '#ffcccb'}"><i class="bi bi-arrow-left-circle"></i></button>
+            <button (click)='deleteTask()' class="btn-icon" [ngStyle]="{'background-color': this.task.lista === 'Done' ? 'lightgreen' : this.task.lista === 'Doing' ? '#FFD580' : '#ffcccb'}"><i class="bi bi-trash"></i></button>
+            <button (click)='forwards()' class="btn-icon" [ngStyle]="{'background-color': this.task.lista === 'Done' ? 'lightgreen' : this.task.lista === 'Doing' ? '#FFD580' : '#ffcccb'}"><i class="bi bi-arrow-right-circle"></i></button>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf='isEditing'>
+        <input [(ngModel)]='titleChange' value='titleChange' class='card-header form-control' [ngStyle]="{'background-color': this.task.lista === 'Done' ? 'lightgreen' : this.task.lista === 'Doing' ? '#FFD580' : '#ffcccb'}">
+
+        <hr>
+
+        <div class='card-body'>
+            <textarea [(ngModel)]='contentChange' class="form-control" rows="1" [ngStyle]="{'background-color': this.task.lista === 'Done' ? 'lightgreen' : this.task.lista === 'Doing' ? '#FFD580' : '#ffcccb'}"></textarea>
+        </div>
+
+        <hr>
+
+        <div class="icon-space">
+            <button (click)='cancelChanges()' class="btn-icon" [ngStyle]="{'background-color': this.task.lista === 'Done' ? 'lightgreen' : this.task.lista === 'Doing' ? '#FFD580' : '#ffcccb'}"><i class="bi bi-x-circle-fill"></i></button>
+            <button (click)='confirmChanges()' class="btn-icon" [ngStyle]="{'background-color': this.task.lista === 'Done' ? 'lightgreen' : this.task.lista === 'Doing' ? '#FFD580' : '#ffcccb'}"><i class="bi bi-check-circle-fill"></i></button>
+        </div>
+    </ng-container>
+</div> -->
+
